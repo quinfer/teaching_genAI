@@ -1,0 +1,59 @@
+---
+title: "teaching Generative AI"
+author: "Barry Quinn CStat"
+format: 
+  revealjs:
+    preview-links: auto
+    css: mycssblend.css
+editor: visual
+---
+
+## Why teach AI in a Business School {.smaller}
+
+-   Technology has been used to augment human communication in business for hundreds of years.
+
+-   Why finance is a social science, many parts of the finance industry are fundamentally quantitative and increasingly algorithmic.
+
+-   AI is a broad term, but AI safety is an emerging business practice.
+
+-   AI, unlike previous technologies, is the first tool in history:
+
+    -   that can "make decision" by itself
+
+    -   that can create "new ideas" by itself
+
+[Yuval Noah Harari on AI Safety](https://open.spotify.com/episode/4cDwZmBR7pbGsEM4dVmCl2?si=4b5169a852604225){preview-link="true"}
+
+## Rethinking AI
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4cDwZmBR7pbGsEM4dVmCl2/video?utm_source=generator&amp;t=7160448" width="624" height="351" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+</iframe>
+
+## Learning objective
+
+-   Understanding algorithmic risk and control
+
+-   How to be a responsible early adopter of an emerging technology
+
+-   How to use *AI tooling* to improve productivity
+
+-   How to be intellectually humble, curious, and critical
+
+-   Be industry relevant
+
+## Learning outcomes
+
+-   Develop principled mathematical know-how for algorithmic control
+
+-   Understand the statistical principles of Generative AI
+
+-   Successful apply Gen AI to a industry relevant problem statement
+
+-   Actively learn how to build and deploy a zero-shot AI inference machine
+
+## How to teach AI in a Business School
+
+-   Use a cloud computing system
+
+-   Use the principles of open science
