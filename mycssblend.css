@@ -1,3 +1,11 @@
+/*-- scss:defaults --*/
+$primary-color: blue;
+
+/*-- scss:rules --*/
+body {
+  background-color: $primary-color;
+}
+
 :root {
   --color-salt: #61acf0; /* blue */
   --color-fat: #f0a561; /* orange */
@@ -11,6 +19,14 @@
 }
 .small {
   font-size:70%;
+}
+
+.smallernottiny {
+  font-size:50%;
+}
+
+.tiny {
+  font-size:40%;
 }
 
 .salt {
@@ -84,7 +100,7 @@
   position: absolute;
   bottom: 2em;
   padding-right: 4em;
-  font-size: 70%;
+  font-size: 60%;
 }
 
 

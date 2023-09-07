@@ -8,10 +8,10 @@
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.353">
+  <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Barry Quinn CStat">
-  <title>teaching Generative AI</title>
+  <title>Using AI and related tools in classroom teaching and assement</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -324,8 +324,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">teaching Generative AI</h1>
+<section id="title-slide" data-background-image="img/title-slide.png" data-background-opacity="0.4" class="quarto-title-block center">
+  <h1 class="title">Using AI and related tools in classroom teaching and assement</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -336,52 +336,469 @@ Barry Quinn CStat
 </div>
 
 </section>
-<section id="why-teach-ai-in-a-business-school" class="slide level2 smaller">
-<h2>Why teach AI in a Business School</h2>
+<section id="agenda" class="slide level2 saltinline">
+<h2>Agenda</h2>
 <ul>
-<li><p>Technology has been used to augment human communication in business for hundreds of years.</p></li>
-<li><p>Why finance is a social science, many parts of the finance industry are fundamentally quantitative and increasingly algorithmic.</p></li>
-<li><p>AI is a portmanteau term, that goes beyond codified machine learning algorithms, but AI safety is an emerging business practice.</p></li>
-<li><p>AI, unlike previous technologies, is the first tool in history:</p>
+<li>AI <del>Hype</del> Trends &amp; Educational Gaps</li>
+<li>Use Case 1: Using Generative AI for code completion</li>
+<li>Use Case 2: Demystifying AI for Finance Students</li>
+<li>Using Generative AI in Teaching (Benefits, Limitations, Challenges)</li>
+</ul>
+</section>
+<section id="ai-hype-trends" class="slide level2">
+<h2>AI <del>Hype</del> Trends</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h4 id="academia">Academia</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://exaly.com/trends-chart/article-citations/1950-2022/Artificial-Intelligence.svg"></p>
+<figcaption>AI Keywords Trends from 103 million scholarly articles (1665-2022) (exaly.com)</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="funding">Funding</h3>
+</div>
+</div>
+</section>
+<section id="ai-index-report-from-the-stanford-institute-for-human-centered-artificial-intelligence-hai" class="slide level2 small">
+<h2>2023 AI Index Report from the Stanford Institute for Human-Centered Artificial Intelligence (HAI):</h2>
+<div class="saltinline">
+<p>Key takeaways</p>
+</div>
 <ul>
-<li><p>that can “make decision” by itself</p></li>
-<li><p>that can create “new ideas” by itself</p></li>
+<li><p><strong>Industry outpacing academia in releasing machine learning models</strong></p></li>
+<li><p><strong>AI’s mixed impact on the environment</strong></p></li>
+<li><p><strong>AI accelerating scientific progress</strong></p></li>
+<li><p><strong>Increase in incidents of AI misuse</strong></p></li>
+<li><p><strong>Growing demand for AI-professional skills in the U.S.</strong></p></li>
+<li><p><strong>Decrease in private investment in AI</strong></p></li>
+<li><p><strong>Stagnation in AI adoption by companies, but those adopting are benefiting</strong></p></li>
+<li><p><strong>Increased policymaker interest in AI</strong></p></li>
+</ul>
+<div class="footnote">
+<p>Click <a href="https://aiindex.stanford.edu/wp-content/uploads/2023/04/HAI_AI-Index-Report_2023.pdf">here</a> for full report. These takeaways are drawn from a diverse range of sources, including data and analysis covering various aspects such as AI geopolitics, environmental impact, education trends, and public opinion. The report indicates a dynamic field with significant advancements, emerging challenges, and a nuanced public reception of AI technologies globally.</p>
+</div>
+<aside class="notes">
+<ul>
+<li><p><strong>Industry outpacing academia in releasing machine learning models</strong>: Since 2014, the industry has been releasing more significant ML models compared to academia. The gap widened in 2022 with 32 significant industry-released models against three from academia, largely due to the industry’s greater resources.</p></li>
+<li><p><strong>AI’s mixed impact on the environment</strong>: AI systems can both harm and help the environment. Some training runs have high carbon footprints, but AI is also used to optimize energy usage.</p></li>
+<li><p><strong>AI accelerating scientific progress</strong>: In 2022, AI models significantly aided scientific advancements, including hydrogen fusion research and generating new antibodies.</p></li>
+<li><p><strong>Increase in incidents of AI misuse</strong>: The ethical misuse of AI, including deepfake incidents and call-monitoring in U.S. prisons, has been on the rise, with a 26-times increase in incidents since 2012.</p></li>
+<li><p><strong>Growing demand for AI-professional skills in the U.S.</strong>: Across nearly all sectors in the U.S., there has been an increase in AI-related job postings, indicating a high demand for AI skills.</p></li>
+<li><p><strong>Decrease in private investment in AI</strong>: In 2022, there was a 26.7% decrease in global AI private investment compared to 2021. Despite this, the investment level was still 18 times higher than in 2013.</p></li>
+<li><p><strong>Stagnation in AI adoption by companies, but those adopting are benefiting</strong>: Although the adoption rate has plateaued, companies that have adopted AI report meaningful cost reductions and revenue increases.</p></li>
+<li><p><strong>Increased policymaker interest in AI</strong>: The AI Index showed a rise in the number of bills mentioning “artificial intelligence” passed into law, indicating growing interest from policymakers globally.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ai-hype-trends-business-school-education" class="slide level2 fatinline">
+<h2>AI <del>Hype</del> Trends &amp; Business School Education</h2>
+<ul>
+<li><p><a href="https://aiindex.stanford.edu/wp-content/uploads/2023/04/HAI_AI-Index-Report_2023.pdf">AI Index Report</a> trends point to a number Business School educational needs:</p></li>
+<li><p>Safety</p></li>
+<li><p>Ethics</p></li>
+<li><p>Regulation and compliance</p></li>
+<li><p>Risk &amp; Control</p></li>
+</ul>
+</section>
+<section id="ai-hype-is-it-different-this-time" class="slide level2 fatinline">
+<h2>AI <del>Hype</del> : Is it different this time?</h2>
+<ul>
+<li><p>Historically, the positive fallout from technology adoption waves, empowers some humans, typically to the detriment of others.</p></li>
+<li><p>This time is could be different, as AI is the first tool in history:</p>
+<ul>
+<li>that can “make decision” by itself</li>
+<li>that can create “new ideas” by itself</li>
+</ul></li>
+<li><p>Such properties have lead to the development of the areas of AI Safety.</p></li>
+</ul>
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Important</strong></p>
+</div>
+<div class="callout-content">
+<p>For more details listen to <a href="https://open.spotify.com/episode/4cDwZmBR7pbGsEM4dVmCl2?si=4b5169a852604225" data-preview-link="true">Yuval Noah Harari on AI Safety</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="my-teaching" class="slide level2 small">
+<h2>My Teaching</h2>
+<ul>
+<li>I teach a module in AI on the master course Financial Analytics.</li>
+<li>In the module I was the following learning objectives and outcomes</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="outcomes">Outcomes</h3>
+<ul>
+<li>Develop principled mathematical know-how for algorithmic control</li>
+<li>Understand the statistical principles of Generative AI</li>
+<li>Successful apply Generative AI to a industry relevant problem statement</li>
+<li>Actively learn how to build and deploy a zero-shot AI inference machine</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<h3 id="objectives">Objectives</h3>
+<ul>
+<li>Understanding algorithmic risk and control</li>
+<li>How to be a responsible early adopter of an emerging technology</li>
+<li>How to use <em>AI tooling</em> to improve productivity</li>
+<li>How to be intellectually humble, curious, and critical</li>
+<li>Be industry relevant</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="use-case-1-code-completion" class="slide level2 nofooter">
+<h2>Use Case 1: Code Completion</h2>
+<iframe width="668" height="434" src="https://www.loom.com/embed/b5732fc08f26400896ef497f80a9a11a?sid=67ba1987-0ea8-4864-ae0b-471ad3978241" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="">
+</iframe>
+<div class="small">
+<ul>
+<li>To maximise productivity in coding my students learn how to combine VScode IDE with Github’s Copilot</li>
+</ul>
+</div>
+</section>
+<section id="use-case-2-demystifying-ai" class="slide level2">
+<h2>Use Case 2: Demystifying AI</h2>
+<ul>
+<li><p>This involves a principled approach to understanding AI through some passive learning in lectures</p></li>
+<li><p>Then I set a graded assignment where students set a classic problem statement in financial research, using GPT models to solve this problem and critique the answer.</p></li>
+<li><p>Firstly, I provide some theoretical definitions of AI and contextualise these with finance examples</p></li>
+<li><p>Secondly I provide some interactive tutorials where we learn how to critique the GPT model in the context of statistical and AI theory</p></li>
+<li><p>What follows is an excerpt of the passive lecture material</p></li>
+</ul>
+</section>
+<section id="use-case-2-demystifying-ai-1" class="slide level2">
+<h2>Use Case 2: Demystifying AI</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="img/AIMA.jpg"></p>
+</div><div class="column" style="width:50%;">
+<div class="saltinline">
+<p>Key takeaways</p>
+</div>
+<ol type="1">
+<li><p><strong>Definition of AI</strong></p></li>
+<li><p><strong>Agents and Environments</strong></p></li>
+<li><p><strong>Problem-Solving</strong></p></li>
+<li><p><strong>Knowledge Representation</strong></p></li>
+<li><p><strong>Planning</strong></p></li>
+<li><p><strong>Uncertainty</strong></p></li>
+<li><p><strong>Learning</strong></p></li>
+<li><p><strong>Natural Language Processing</strong></p></li>
+<li><p><strong>Robotics</strong></p></li>
+<li><p><strong>Ethics and Future</strong></p></li>
+</ol>
+</div>
+</div>
+<aside class="notes">
+<ol type="1">
+<li><p><strong>Definition of AI</strong>: The book starts with various definitions of AI, exploring it as a discipline that seeks to create machines that act rationally or mimic human intelligence.</p></li>
+<li><p><strong>Agents and Environments</strong>: AIMA introduces the concept of an agent that takes actions in an environment to achieve a goal. The “rational agent” is a cornerstone idea, emphasizing decision-making that maximizes some notion of utility.</p></li>
+<li><p><strong>Problem-Solving</strong>: The book describes approaches to problem-solving including search algorithms like breadth-first, depth-first, and A* search. These are methods a machine can use to navigate a problem space to find a solution efficiently.</p></li>
+<li><p><strong>Knowledge Representation</strong>: Russell and Norvig discuss how knowledge can be represented in a machine, using formalisms like logic and probabilistic models.</p></li>
+<li><p><strong>Planning</strong>: The ability for a machine to plan actions to achieve a goal is another central theme. Planning involves not just choosing actions but also anticipating their outcomes.</p></li>
+<li><p><strong>Uncertainty</strong>: In the real world, uncertainty is unavoidable. The book discusses how machines can make decisions under uncertainty using probabilistic approaches like Bayesian networks.</p></li>
+<li><p><strong>Learning</strong>: AIMA covers various machine learning paradigms, explaining how a machine can learn from data and improve its performance over time. This is particularly relevant to your expertise in data science.</p></li>
+<li><p><strong>Natural Language Processing</strong>: Given the complexities and nuances of human language, the book covers techniques for teaching machines to understand, generate, and respond to human language.</p></li>
+<li><p><strong>Robotics</strong>: The book also delves into the world of robotics, discussing the challenges and approaches to creating machines that can interact with the physical world.</p></li>
+<li><p><strong>Ethics and Future</strong>: Finally, it touches upon the ethical considerations and the future of AI, including existential risks and the impact on employment and society.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="demystifying-ai" class="slide level2">
+<h2>Demystifying AI</h2>
+<div class="columns">
+<div class="column" style="width:10%;">
+<p><img data-src="img/AIMA.jpg"></p>
+</div><div class="column smallernottiny" style="width:90%;">
+<ul>
+<li>AIMA provide four definitions of AI based on <strong>Thought vs.&nbsp;Action</strong></li>
+</ul>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Thinking Humanly</a></li><li><a href="#tabset-1-2">Thinking Rationally</a></li><li><a href="#tabset-1-3">Acting Humanly</a></li><li><a href="#tabset-1-4">Acting Rationally</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p><strong>Summary</strong>: Leveraging computational models to simulate human cognitive processes.</p>
+<ul>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Neural Networks</strong>: Used for credit scoring by analyzing a large dataset of customer information to predict creditworthiness.</li>
+<li><strong>Cognitive Architectures</strong>: Designing intelligent systems to simulate traders’ decision-making processes in stock markets.</li>
 </ul></li>
 </ul>
-<p><a href="https://open.spotify.com/episode/4cDwZmBR7pbGsEM4dVmCl2?si=4b5169a852604225" data-preview-link="true">Yuval Noah Harari on AI Safety</a></p>
-</section>
-<section id="rethinking-ai" class="slide level2">
-<h2>Rethinking AI</h2>
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4cDwZmBR7pbGsEM4dVmCl2/video?utm_source=generator&amp;t=7160448" width="624" height="351" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-</iframe>
-</section>
-<section id="learning-objective" class="slide level2">
-<h2>Learning objective</h2>
+</div>
+<div id="tabset-1-2">
 <ul>
-<li><p>Understanding algorithmic risk and control</p></li>
-<li><p>How to be a responsible early adopter of an emerging technology</p></li>
-<li><p>How to use <em>AI tooling</em> to improve productivity</p></li>
-<li><p>How to be intellectually humble, curious, and critical</p></li>
-<li><p>Be industry relevant</p></li>
-</ul>
-</section>
-<section id="learning-outcomes" class="slide level2">
-<h2>Learning outcomes</h2>
+<li><strong>Summary</strong>: Constructing AI systems capable of logical inference to symbolize knowledge and solve complex problems.</li>
+<li><strong>Examples</strong>:
 <ul>
-<li><p>Develop principled mathematical know-how for algorithmic control</p></li>
-<li><p>Understand the statistical principles of Generative AI</p></li>
-<li><p>Successful apply Gen AI to a industry relevant problem statement</p></li>
-<li><p>Actively learn how to build and deploy a zero-shot AI inference machine</p></li>
+<li><strong>Classical AI</strong>: Developing rule-based systems for regulatory compliance and monitoring.</li>
+<li><strong>Expert Systems</strong>: Creating platforms that offer financial advice based on a vast knowledge base and rules set by financial experts.</li>
+</ul></li>
 </ul>
-</section>
-<section id="how-to-teach-ai-in-a-business-school" class="slide level2">
-<h2>How to teach AI in a Business School</h2>
+</div>
+<div id="tabset-1-3">
 <ul>
-<li><p>Use a cloud computing system</p></li>
-<li><p>Use the principles of open science</p></li>
+<li><strong>Summary</strong>: Crafting rational agents optimized to take the most beneficial actions based on their perceived understanding of the world.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Decision-Making Algorithms</strong>: Algorithms facilitating high-frequency trading by making rapid decisions based on market conditions.</li>
+<li><strong>Planning</strong>: Utilizing AI in strategic financial planning and asset management to maximize returns.</li>
+</ul></li>
 </ul>
-<div class="footer footer-default">
+</div>
+<div id="tabset-1-4">
+<ul>
+<li><strong>Summary</strong>: Crafting rational agents optimized to take the most beneficial actions based on their perceived understanding of the world.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Decision-Making Algorithms</strong>: Algorithms facilitating high-frequency trading by making rapid decisions based on market conditions.</li>
+<li><strong>Planning</strong>: Utilizing AI in strategic financial planning and asset management to maximize returns.</li>
+<li><strong>Learning Techniques</strong>: Applying reinforcement learning in algorithmic trading to learn and adapt trading strategies continuously based on market dynamics.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<ol type="1">
+<li><p><strong>Thinking Humanly</strong>: This approach aims to understand and emulate human cognition. Computational models, like neural networks and cognitive architectures.</p></li>
+<li><p><strong>Thinking Rationally</strong>: AI is viewed as systems that can represent knowledge and use logical inference to solve problems. Classical AI and expert systems typically fit this definition.</p></li>
+<li><p><strong>Acting Humanly</strong>: The focus here is on mimicking human behavior, including natural language processing, visual perception, and even emotional intelligence. The Turing Test is often cited as a measure of this kind of AI.</p></li>
+<li><p><strong>Acting Rationally</strong>: This approach focuses on rational agents that act to achieve the best outcome, given their perception of the world. Decision-making algorithms, planning, and learning techniques often fall under this category. The idea is to create AI agents that make decisions based on maximizing some notion of utility. ### 1. Thinking Humanly <strong>Summary</strong>: Leveraging computational models to simulate human cognitive processes.</p></li>
+</ol>
+<ul>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Neural Networks</strong>: Used for credit scoring by analyzing a large dataset of customer information to predict creditworthiness.</li>
+<li><strong>Cognitive Architectures</strong>: Designing intelligent systems to simulate traders’ decision-making processes in stock markets.</li>
+</ul></li>
+</ul>
+<h3 id="thinking-rationally-1">2. Thinking Rationally</h3>
+<ul>
+<li><strong>Summary</strong>: Constructing AI systems capable of logical inference to symbolize knowledge and solve complex problems.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Classical AI</strong>: Developing rule-based systems for regulatory compliance and monitoring.</li>
+<li><strong>Expert Systems</strong>: Creating platforms that offer financial advice based on a vast knowledge base and rules set by financial experts.</li>
+</ul></li>
+</ul>
+<h3 id="acting-humanly-1">3. Acting Humanly</h3>
+<ul>
+<li><strong>Summary</strong>: Developing AI with capabilities to mimic human behaviors including understanding and generating human language, and recognizing visual cues.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Natural Language Processing (NLP)</strong>: Chatbots like Erica from Bank of America, helping customers with banking queries using natural language understanding.</li>
+<li><strong>Visual Perception</strong>: Utilizing AI for document digitization and data extraction in Know Your Customer (KYC) processes.</li>
+<li><strong>Emotional Intelligence</strong>: Implementing systems to analyze customer feedback and reviews to understand and improve customer satisfaction.</li>
+</ul></li>
+</ul>
+<h3 id="acting-rationally-1">4. Acting Rationally</h3>
+<ul>
+<li><strong>Summary</strong>: Crafting rational agents optimized to take the most beneficial actions based on their perceived understanding of the world.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li><strong>Decision-Making Algorithms</strong>: Algorithms facilitating high-frequency trading by making rapid decisions based on market conditions.</li>
+<li><strong>Planning</strong>: Utilizing AI in strategic financial planning and asset management to maximize returns.</li>
+<li><strong>Learning Techniques</strong>: Applying reinforcement learning in algorithmic trading to learn and adapt trading strategies continuously based on market dynamics.</li>
+</ul></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="teaching-gpt" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title">Teaching GPT</h2>
+<p>GPT stands for:</p>
+<div class="r-hstack">
+<div data-id="box1" data-auto-animate-delay="0" style="background: #2780e3; width: 200px; height: 150px; margin: 10px;">
+<p><strong>Generative</strong></p>
+</div>
+<div data-id="box2" data-auto-animate-delay="0.1" style="background: #3fb618; width: 200px; height: 150px; margin: 10px;">
+<p><strong>Pre-trained</strong></p>
+</div>
+<div data-id="box3" data-auto-animate-delay="0.2" style="background: #e83e8c; width: 200px; height: 150px; margin: 10px;">
+<p><strong>Transformer</strong></p>
+</div>
+</div>
+<div class="content-box-blue small">
+<ul>
+<li><strong>Generative</strong>
+<ul>
+<li>Denotes the model’s ability to fabricate text data that is coherent and pertains to the given input.</li>
+</ul></li>
+<li><strong>Pre-trained</strong>
+<ul>
+<li>Refers to the initial training phase where the model acquires a foundational understanding of language and context from large datasets, facilitating nuanced responses in specific tasks later on.</li>
+</ul></li>
+<li><strong>Transformer</strong>
+<ul>
+<li>Pertains to the Transformer architecture foundational to the model, a significant advancement in natural language processing introduced by Vaswani et al.&nbsp;(2017), which employs attention mechanisms to understand the contextual relationships between words in a sentence more precisely.</li>
+</ul></li>
+</ul>
+</div>
+<aside class="notes">
+<p><strong>Generative</strong>: This signifies that the model can generate text data. In other words, it can produce new text that is coherent and contextually relevant based on the input it receives.</p>
+<p><strong>Transformer</strong>: This refers to the Transformer architecture upon which the model is based. Introduced in the paper “Attention Is All You Need” by Vaswani et al.&nbsp;in 2017, the Transformer architecture has become a cornerstone in the field of natural language processing. It uses mechanisms like attention to better understand the context and relationships between words in a sentence.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="teaching-gpt-1" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
+<h2 data-id="quarto-animate-title">Teaching GPT</h2>
+<div class="r-stack">
+<div data-id="box1" style="background: #2780e3; width: 350px; height: 350px; border-radius: 200px;">
+<p><strong>G</strong></p>
+</div>
+<div data-id="box2" style="background: #3fb618; width: 250px; height: 250px; border-radius: 200px;">
+<p><strong>P</strong></p>
+</div>
+<div data-id="box3" style="background: #e83e8c; width: 150px; height: 150px; border-radius: 200px;">
+<p><strong>T</strong></p>
+</div>
+</div>
+<div class="content-box-red">
+<p>So, GPT is a type of machine learning model that uses the Transformer architecture, is pre-trained on a large corpus of text, and can generate new text based on the inputs it receives.</p>
+</div>
+</section>
+<section id="gpt-framed-using-the-aima-definitions" class="slide level2 small">
+<h2>GPT framed using the AIMA definitions</h2>
+<h3 id="thinking-humanly-1">Thinking Humanly</h3>
+<p>While Generative AI models like GPT do not exactly replicate human cognition, they do aim to mimic human-like text generation capabilities. By being trained on a vast corpus of human-generated text, these models try to capture the nuances and complexities of human language.</p>
+<h3 id="thinking-rationally-2">Thinking Rationally</h3>
+<p>From a rational perspective, Generative AI does not focus on logical reasoning as its primary function. However, it does try to predict the “next word” in a sequence as accurately as possible based on probabilistic models, thus making a “rational” choice among the possible word options.</p>
+<h3 id="acting-humanly-2">Acting Humanly</h3>
+<p>Large Language Models excel in this category. They are designed to generate text that is indistinguishable from that written by a human. This is similar to passing a Turing Test in the domain of natural language text, where the generated text is often coherent, contextually relevant, and can even be creative or emotional.</p>
+<h3 id="acting-rationally-2">Acting Rationally</h3>
+<p>In the rational agent framework, these models act to maximize an objective function during the training phase. The objective is usually to minimize the difference between the predicted and actual next word in a sequence. So, in that sense, they are acting “rationally” to achieve the best performance based on the data they were trained on.</p>
+<section id="summary" class="notes">
+<h3>Summary</h3>
+<p>Generative AI using Large Language Models can be seen as a hybrid in the context of AIMA’s definitions. They lean towards “Acting Humanly” in their primary function, which is to generate human-like text. However, they are built and operate on principles that aim for rational action, specifically maximizing the likelihood of their predictions given the data they have seen. While they don’t fully encapsulate logical reasoning (Thinking Rationally) or strive to replicate human cognition (Thinking Humanly), they represent an intersection of acting both humanly and rationally in the specific domain of natural language text.</p>
+</section>
+</section>
+<section id="ai-trends-business-school-education-according-to-gpt4" class="slide level2 tiny">
+<h2>AI Trends &amp; Business School Education (According to GPT4)</h2>
+<ol type="1">
+<li><strong>Personalised Learning Paths</strong>
+<ul>
+<li>AI algorithms identifying individual learning patterns</li>
+<li>Customized educational content based on learner’s progress and preferences</li>
+</ul></li>
+<li><strong>AI-Enhanced Content Delivery</strong>
+<ul>
+<li>Smart content creation: interactive and dynamic learning materials</li>
+<li>Virtual tutors providing 24/7 assistance and feedback</li>
+</ul></li>
+<li><strong>Real-Time Analytics and Feedback</strong>
+<ul>
+<li>Systems tracking student progress in real-time</li>
+<li>Immediate feedback for continuous improvement</li>
+</ul></li>
+<li><strong>Simulation and Modeling</strong>
+<ul>
+<li>Hands-on experience with AI-driven financial simulations</li>
+<li>Real-world business case studies created using AI technologies</li>
+</ul></li>
+<li><strong>Predictive Analytics in Course Design</strong>
+<ul>
+<li>Predictive models assisting in course design based on industry trends and demands</li>
+<li>Anticipating student needs and preferences for more effective teaching</li>
+</ul></li>
+<li><strong>Automated Administrative Tasks</strong>
+<ul>
+<li>Automation of grading and attendance tracking</li>
+<li>AI-driven tools for plagiarism detection and ensuring academic integrity</li>
+</ul></li>
+<li><strong>Collaborative Learning Environments</strong>
+<ul>
+<li>AI-facilitated group projects and collaborative learning platforms</li>
+<li>Peer review and feedback systems enhanced with AI insights</li>
+</ul></li>
+<li><strong>Incorporating Real-Time Market Dynamics</strong>
+<ul>
+<li>Incorporating live market data and trends in the curriculum</li>
+<li>AI tools providing insights on recent developments in the finance sector</li>
+</ul></li>
+<li><strong>Career Guidance and Development</strong>
+<ul>
+<li>AI-driven career counseling based on industry demands and student preferences</li>
+<li>Predictive analytics for job market trends and opportunities</li>
+</ul></li>
+<li><strong>Ethical Considerations</strong>
+<ul>
+<li>Courses on the ethical implications of AI in business</li>
+<li>Encouraging critical thinking on the societal impacts of AI</li>
+</ul></li>
+</ol>
+</section>
+<section id="ai-trends-business-school-education-my-output" class="slide level2 small">
+<h2>AI Trends &amp; Business School Education (My Output)</h2>
+<ol start="6" type="1">
+<li><strong>Automated Administrative Tasks</strong>
+<ul>
+<li>Automation of grading and attendance tracking (I can do this with GitHub Classroom)</li>
+<li>AI-driven tools for plagiarism detection and ensuring academic integrity (Some of my colleagues in Computer Science are working on algorithms to do this)</li>
+</ul></li>
+<li><strong>Ethical Considerations</strong>
+<ul>
+<li>Courses on the ethical implications of AI in business (We are doing this??)</li>
+<li>Encouraging critical thinking on the societal impacts of AI (And this?)</li>
+</ul></li>
+</ol>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<div class="glow">
+<p>Thanks &amp; Questions</p>
+</div>
 
+<img src="img/QUB_QBS_Logo_Red_Landscape.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
+<p><a href="https://quinference.com" class="uri">https://quinference.com</a></p>
 </div>
 </section>
     </div>
@@ -436,7 +853,7 @@ Barry Quinn CStat
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',

@@ -1,0 +1,88 @@
+/*-- scss:rules --*/
+body {
+  background-color: $primary-color;
+}
+
+
+
+$color-salt: #61acf0;
+$color-fat: #f0a561;
+$color-acid: #cbd20a;
+$color-heat: #e74a2f;
+$color-black: #1a1917;
+$classic-blue: inherit;
+$baby-blue: inherit;
+
+%text-size {
+  font-size: 200%;
+  font-weight: 700;
+}
+
+%img-object-fit {
+  img { 
+    object-fit: fill; 
+    height:100%; 
+    width:100%; 
+    overflow: hidden;
+  }
+}
+
+.large { font-size: 160%; }
+.small { font-size: 70%; }
+
+.salt {
+  @extend %text-size;
+  color: $color-salt;
+}
+
+.fat {
+  @extend %text-size;
+  color: $color-fat;
+}
+
+.acid {
+  @extend %text-size;
+  color: $color-acid;
+}
+
+.heat {
+  @extend %text-size;
+  color: $color-heat;
+}
+
+// ... (repeat for other classes like .saltinline, .fatinline, etc.)
+
+.huge-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 600%;
+  font-weight: bold;
+  color: $classic-blue;
+}
+
+// ... (repeat for other styles like .huge-number, .hand, etc.)
+
+.remark-code-line-highlighted { background-color: rgba($color-salt, .5); }
+
+// ... (repeat for other styles like .remark-code, .img-fill, etc.)
+
+@include keyframes(glow) {
+  from { /* your styles */ }
+  to { /* your styles */ }
+}
+
+.glow {
+  font-size: 200%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  @include animation(glow 1s ease-in-out infinite alternate);
+}
+
+// ... (repeat for other styles like .glowinline, .pull-left-2, etc.)
+
+.content-box {
+  box-sizing: border-box;
+  background-color: #e2e2e2;
+}
+
+// ... (repeat for other styles like .content-box-blue, .full-width, etc.)
